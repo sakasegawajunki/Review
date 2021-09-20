@@ -8,7 +8,8 @@ import service.MemberServiceImpl;
 public class Main {
 
 	public static void main(String[] args) {
-		MemberServiceImpl service = new MemberServiceImpl();
+//		MemberServiceImpl service = new MemberServiceImpl();
+		MemberServiceImpl service = MemberServiceImpl.getInstance();
 		System.out.println(service.greet(2));
 		
 		System.out.println(service.getAll());
@@ -16,6 +17,8 @@ public class Main {
 		for(Member mem : list) {
 			System.out.println(mem.getId() + "," + mem.getName() + "," + mem.getEmail());
 		}
+		System.out.println(service.sumOf(3, 5));
+		
 	}
 
 }
