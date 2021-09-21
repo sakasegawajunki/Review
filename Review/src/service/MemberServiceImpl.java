@@ -27,7 +27,9 @@ public class MemberServiceImpl implements MemberService {
 		list.add(mem2);
 		
 		return list;
+		
 	}
+	
 
 	@Override
 	public int sumOf(int x, int y) {
